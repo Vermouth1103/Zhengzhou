@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zhengzhou</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/sidebar-menu.css">	
+	<link rel="stylesheet" type="text/css" href="css/dmaku.css" />
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="d3/d3.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
+	<script src="d3-queue/d3-queue.js"></script>
+
+	<script src="js/d3.layout.cloud.js"></script>
+
+</head>
+<body>
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<ul class="sidebar-menu">
+				<li class="header">郑州交通</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+						<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</aside>
+
+	<div class="map-window">
+		<div class="map-area">
+			<script src="js/map.js"></script>
+		</div>
+		<HR class="divider">
+		<div class="hours">
+			<div class="time-label">
+
+			</div>
+		</div>
+		<div class="hours-graph">
+
+		</div>
+		<script src="js/rects.js"></script>
+	</div>
+
+	<div class="detail-window">
+		<div class="word-cloud">
+			<script src="js/wordCloud.js"></script>
+		</div>
+
+		<div class="info-window">
+			<script src="js/infoWindow.js"></script>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/sidebar-menu.js"></script>
+	<script>
+		$.sidebarMenu($('.sidebar-menu'))
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.detail-window{
+    margin-top: 10px;
+    margin-left: 1060px;
+    width: 350px;
+    height: 700px;
+    background: #494A5F;
+}
+
+.detail-window > .word-cloud{
+    /*margin-top: 20px;*/
+    /*margin-left: 1080px;*/
+    margin: 5px;
+    width: 340px;
+    height: 340px;
+    border: 1.5px solid;
+    background: #35343f;
+}
+
+.detail-window > .info-window{
+    margin: 5px;
+    margin-top: 20px;
+    width: 340px;
+    height: 340px;
+    border: 1.5px solid;
+    background: white;
+}

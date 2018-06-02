@@ -1,0 +1,12 @@
+.tooltip {
+    font-family: SimSun-ExtB;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 5px;
+}
